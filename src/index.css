@@ -1,0 +1,33 @@
+a {
+  color: var(--header-link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.main-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (min-width: 601px) {
+  .header-list-mob {
+    display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    max-width: 90vw;
+  }
+
+  .header-list {
+    display: none !important;
+  }
+}

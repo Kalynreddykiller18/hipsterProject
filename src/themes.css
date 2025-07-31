@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  transition: background 0.5s, color 0.5s, font-family 0.5s;
+}
+
+/* Theme 1: Minimalist Light */
+.theme1 {
+  --primary-bg: #f6f7fb;
+  --primary-text: #19202a;
+  --accent: #405cf7;
+  --header-bg: #fff;
+  --header-link: #292b37;
+  --button-bg: #405cf7;
+  --button-text: #fff;
+  --card-bg: #fff;
+  --card-border: #dedede;
+}
+
+/* Theme 2: Dark Sidebar */
+.theme2 {
+  --primary-bg: #181824;
+  --primary-text: #f0f0f2;
+  --accent: #60a3d9;
+  --header-bg: #151526;
+  --header-link: #60a3d9;
+  --button-bg: #60a3d9;
+  --button-text: #181824;
+  --card-bg: #232344;
+  --card-border: #2d2e4d;
+}
+
+/* Theme 3: Colorful Card Grid */
+.theme3 {
+  --primary-bg: #faf6fa;
+  --primary-text: #2c2942;
+  --accent: #fe6384;
+  --header-bg: #ffe261;
+  --header-link: #fe6384;
+  --button-bg: #fe6384;
+  --button-text: #fff;
+  --card-bg: #ffece7;
+  --card-border: #fcba7f;
+}
+
+/* Use the variables */
+body {
+  background: var(--primary-bg);
+  color: var(--primary-text);
+}
+
+header {
+  background: var(--header-bg);
+  box-shadow: 0 2px 4px rgba(20, 20, 20, 0.03);
+}
+
+button {
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  border-radius: 6px;
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+  padding: 1.2em;
+  margin: 1em;
+  transition: background 0.5s, border-color 0.5s;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1em;
+  }
+}
